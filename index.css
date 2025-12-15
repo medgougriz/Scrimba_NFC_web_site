@@ -43,12 +43,12 @@ a:hover, a:active{
 .btn-dark,
 .btn-mid,
 .btn-light{
+    display: inline-block;
     padding: 10px 19px;
     border-radius: 4.6px;
     font-weight: 500;
     text-decoration: none;
 }
-
 
 .btn-dark{
     background-color: #5f29a3;
