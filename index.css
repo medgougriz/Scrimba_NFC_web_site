@@ -40,15 +40,6 @@ a:active{
 
 /* layout */
 
-/* 
-Challenge:
-1. Change the background color of this 
-   section, remembering to make sure 
-   the color covers 100% of the width.
-2. Change the font color for all text in 
-   this section.
-*/
-
 header{
     background-color: #5f29a3;
     padding: 45px 0;
@@ -58,16 +49,24 @@ section{
     padding: 45px 0;
 }
 
+.section-two{
+    color: whitesmoke;
+    background-color: #5f29a3;
+}
+
 .container{
     width: 620px;
     margin: 0 auto;
 }
-.crypto-section{
-    background-color: #5f29a3;
-    color: whitesmoke;
-    
+.img{
+    width: 300px;
+    border-radius: 6px;
 }
 
+.images{
+    display: flex;
+    justify-content: space-around;
+}
 
 .main-image{
     width:100%;
