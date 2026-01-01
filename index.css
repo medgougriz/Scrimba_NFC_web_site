@@ -23,11 +23,11 @@ h2 {
 }
 
 h3 {
-    font-size: 1.25em;
+    font-size: 1.25rem;
 }
 
 p {
-    line-height: 23px;
+    line-height: 1.5;
 }
 
 .subheading {
@@ -52,9 +52,8 @@ a:active {
     color: #d4b44c;
 }
 
-
 .btn {
-    font-size: 1.125rem; 
+    font-size: 1.125rem;
     font-weight: 500;
     text-decoration: none;
     display: inline-block;
@@ -90,7 +89,7 @@ a:active {
 header, 
 section, 
 footer {
-    padding: 2.875em 0; 
+    padding: 2.875em 0;
 }
 
 header, 
@@ -112,20 +111,33 @@ header,
     width: 100%;
     display: block;
     max-width: 640px;
-    margin: 0 auto 2em; 
+    margin: 0 auto 2em;
 }
 
 .section-two-image-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 .feature-image {
-    width: 48.8%;
     border-radius: 4.6px;
+    margin-bottom: 1em;
 }
 
 footer {
     text-align: center;
     color: #5f29a3;
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+@media (min-width: 480px) {
+    .section-two-image-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .feature-image {
+        width: 48.8%;        
+    }
 }
